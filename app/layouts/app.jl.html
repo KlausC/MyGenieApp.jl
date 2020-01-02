@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Genie :: The Highly Productive Julia Web Framework</title>
+  </head>
+  <body>
+    <h1>Welcome to top books</h1>
+    <%
+      @yield
+    %>
+    <% if Genie.config.websocket_server %>
+      <script src="/js/app/channels.js"></script>
+    <% end %>
+  </body>
+</html>

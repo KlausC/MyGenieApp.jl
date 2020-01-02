@@ -1,0 +1,3 @@
+#!/bin/sh
+ulimit -v 5250000
+~/julia/julia --startup-file=no --color=yes --depwarn=no -q -L bootstrap.jl -- "$@"
